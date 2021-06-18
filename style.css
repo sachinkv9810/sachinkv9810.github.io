@@ -40,6 +40,8 @@ header{
 }
 .row{
   margin-top: 100px;
+  display: flex;
+  /* flex-direction: column; */
 }
 
 .nav-items{
@@ -171,17 +173,60 @@ nav{
   height: 90%;
   min-width: 400px;
 }
-.typewriter{
-  margin-top: 3rem;
-}
+
 .name{
   display: inline;
   margin-bottom: 30px;
+  width: 350px;
 }
 .naam{
   display:flex;
   /* background-color: red; */
 }
+.dynamic-txt{
+  margin-left: 10px;
+  line-height: 60px;
+  height: 60px;
+  overflow: hidden;
+}
+.dynamic-txt li{
+  color: rgb(212, 0, 255);
+  list-style: none;
+  position: relative;
+  top: 0;
+  font-weight: 500;
+  font-size: 50px;
+  font-family: 'Raleway', sans-serif !important;
+  animation: slide 6s steps(4) infinite;
+}
+@keyframes slide{
+  100%{
+    top: -360px;
+
+  }
+}
+.dynamic-txt li span{
+  position: relative;
+}
+.dynamic-txt li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid;
+  animation: typing 1.5s steps(18) infinite;
+  background-color: #171248;
+}
+
+@keyframes typing{
+  100%{
+    left: 100%;
+    marging: 0 -35px 0 35px;
+
+  }
+}
+
 .intro h1{
   margin: 10px;
 }
