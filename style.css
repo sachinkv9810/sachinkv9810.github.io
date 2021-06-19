@@ -5,6 +5,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body{
     background-color: #171248;
@@ -184,6 +185,7 @@ nav{
   /* background-color: red; */
 }
 .dynamic-txt{
+  margin-top: 50px;
   margin-left: 10px;
   line-height: 60px;
   height: 60px;
@@ -201,7 +203,7 @@ nav{
 }
 @keyframes slide{
   100%{
-    top: -360px;
+    top: -250px;
 
   }
 }
@@ -215,7 +217,7 @@ nav{
   height: 100%;
   width: 100%;
   border-left: 2px solid;
-  animation: typing 1.5s steps(18) infinite;
+  animation: typing 1.5s steps(25) infinite;
   background-color: #171248;
 }
 
@@ -409,4 +411,7 @@ ul a:nth-child(4){
 footer{
   display: flex;
   /* flex-direction: column; */
+}
+.link a{
+  margin-left: 20px;
 }
